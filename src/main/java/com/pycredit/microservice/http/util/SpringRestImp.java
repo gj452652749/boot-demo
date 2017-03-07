@@ -1,8 +1,5 @@
 package com.pycredit.microservice.http.util;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
