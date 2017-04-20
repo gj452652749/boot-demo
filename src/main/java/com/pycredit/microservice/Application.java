@@ -7,6 +7,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
 import com.pycredit.microservice.http.util.HttpRest;
+import com.pycredit.microservice.http.util.HttpRestImp;
 import com.pycredit.microservice.http.util.SpringRestImp;
 //@Configuration
 //@EnableAutoConfiguration
@@ -16,6 +17,10 @@ public class Application extends SpringBootServletInitializer{
 	@Bean
 	public HttpRest httpRest() {
 		return new SpringRestImp();
+	}
+	@Bean
+	public HttpRest commonHttpRest() {
+		return new HttpRestImp();
 	}
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
